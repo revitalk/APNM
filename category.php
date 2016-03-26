@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying category pages.
+ * The template for displaying category pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
