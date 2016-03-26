@@ -57,11 +57,6 @@ body {
 	margin: 0;
 }
 
-#page{
-	max-width:960px;
-	margin:0 auto;
-}
-
 article,
 aside,
 details,
@@ -925,4 +920,22 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/* New Styles  */
+
+#page{
+	max-width:960px;
+	margin:0 auto;
+}
+
+/* membership styles */
+.pmpro_checkout thead th{
+display:none;
+}
+
+/* blog footer links  */
+
+.cat-links, .comments-link, edit-link{
+margin-right:1em;
 }
