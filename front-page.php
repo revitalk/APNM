@@ -26,20 +26,16 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 			<?php wp_reset_query(); ?>
-			<div class="row">
-
+		<div class="row">
 			<div class="col-3">
 			<?php query_posts('category_name=news-home&posts_per_page=1'); ?>
 				<?php
 			while ( have_posts() ) : the_post();
-
 				get_template_part( 'template-parts/content', 'page' );
-
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
-
 			endwhile; // End of the loop.
 			?>
 			<?php wp_reset_query(); ?>
@@ -48,14 +44,12 @@ get_header(); ?>
 			<?php query_posts('category_name=events-home&posts_per_page=1'); ?>
 				<?php
 			while ( have_posts() ) : the_post();
-
 				get_template_part( 'template-parts/content', 'page' );
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
-
 			endwhile; // End of the loop.
 			?>
 			<?php wp_reset_query(); ?>
@@ -76,7 +70,7 @@ get_header(); ?>
 			?>
 			<?php wp_reset_query(); ?>
 			</div>
-</div>
+		</div><!-- .row -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
