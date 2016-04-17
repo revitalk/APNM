@@ -57,6 +57,12 @@ body {
 	margin: 0;
 }
 
+#page{
+	max-width:960px;
+	margin:0 auto;
+position:relative;
+}
+
 article,
 aside,
 details,
@@ -639,6 +645,17 @@ a:active {
 	.main-navigation ul {
 		display: block;
 	}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-3{
+	width:33.333333%;
+	float:left;
+	padding-left:15px;
+	padding-right:15px;
+}
+
 }
 
 .site-main .comment-navigation,
@@ -922,13 +939,6 @@ object {
 	display: block;
 }
 
-/* New Styles  */
-
-#page{
-	max-width:960px;
-	margin:0 auto;
-}
-
 /* membership styles */
 .pmpro_checkout thead th{
 display:none;
@@ -939,3 +949,32 @@ display:none;
 .cat-links, .comments-link, edit-link{
 margin-right:1em;
 }
+
+/*header styles */
+/*.site-branding{
+width:30%;
+float:left;
+}*/
+
+/*#site-navigation{
+width:70%;
+float:right;
+}*/
+
+#audioPlayer{
+    width:30%;
+    position:absolute;
+    top:0px;
+    right:20px;
+margin-top:-120px
+}
+
+.mejs-container{
+background:red !important;
+}
+.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls{
+border-radius:5px;
+background:maroon !important;
+
+}
+
