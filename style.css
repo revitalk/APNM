@@ -571,9 +571,10 @@ a:active {
 }
 
 .main-navigation li {
-	float: left;
+	float: none;
 	position: relative;
 	margin:1em;
+	margin-left:0;
 }
 
 .main-navigation a {
@@ -582,13 +583,9 @@ a:active {
 }
 
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	background-color:#fff;
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
+background-color:#fff;
+position: absolute;
+left: -999em;
 }
 
 .main-navigation ul ul ul {
@@ -619,6 +616,7 @@ a:active {
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
+	position:relative;
 }
 
 .main-navigation ul ul li:hover > ul,
@@ -645,6 +643,25 @@ a:active {
 	.main-navigation ul {
 		display: block;
 	}
+	.main-navigation li {
+	float: left;
+	margin-left:1em;
+}
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	background-color:#fff;
+	float: left;
+	position: absolute;
+	top: 1.5em;
+	left: -999em;
+	z-index: 99999;
+}
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+	position:absolute;
+}
+
 .row {
   margin-right: -15px;
   margin-left: -15px;
